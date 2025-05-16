@@ -101,10 +101,12 @@ def start_game():
     print("Press Enter to start...")
     input()
     curses.wrapper(main)
-    print("Thanks for playing Snake Game!")
+    # print("Thanks for playing Snake Game!")
+    print("Game Over")
 
 if __name__ == "__main__":
     try:
         start_game()
     except Exception as e:
         print(f"An error occurred: {e}")
+    
